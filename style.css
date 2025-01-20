@@ -10,6 +10,15 @@
   .flex{
     display: flex;
   }
+  .dark-2{
+    color: #424242;
+  }
+  .dark-3{
+    color: #727272;
+  }
+  .text-primary{
+    color: #FF900E;
+  }
   .btn-primary{
     background-color: #FF900E;
     color: #FFFF;
@@ -22,6 +31,11 @@
   main{
     max-width: 1440px;
     margin: 0 auto;
+  }
+  .section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
   }
   /* nav styles */
   .nav-bar{
@@ -42,12 +56,7 @@
 .light-gray{
   background-color: rgba(255, 144, 14, 0.1);
 }
-.dark-2{
-  color: #424242;
-}
-.dark-3{
-  color: #727272;
-}
+
 .nav-bar, .banner{
   max-width: 1440px;
   margin: 0 auto;
@@ -71,17 +80,107 @@
   width: 100%;
 }
 
-@media screen and (max-width: 576px) {
-  .nav-bar, .nav-list{
-    flex-direction: column ;
-  }
-}
+/* Main styles */
 .team{
   align-items: center;
   gap: 20px;
+}
+main>section{
+  margin-top: 130px;
 }
 .team-images-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.our-features{
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.quick-list{
+  font-weight: 500;
+}
+.feature-description{
+  font-size: 1rem;
+  line-height: 26px;
+}
+/* Fetures style */
+
+.features-title{
+  border-left:5px solid #FF900E;
+  padding-left: 20px;
+}
+.features-love{
+  gap: 100px;
+}
+.card-design{
+  padding: 30px 36px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.card-design>h1{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.card-design>p{
+  font-size: 1rem;
+}
+#experience-badge{
+  padding: 45px 42px;
+  background-color: #FF900E;
+  border-radius: 5px;
+  border: none;
+  margin-left: -90px;
+  margin-top: -75px;
+}
+.experinence-year{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.experience{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffff;
+}
+
+/* Responsive style */
+@media screen and (max-width: 576px) {
+  .nav-bar,
+  .nav-list,
+  .team,
+  .features-love{
+    flex-direction: column ;
+  }
+  .team-images-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features{
+    margin-left: 20px;
+  }
+  .features-image>img{
+    width: 100%;
+  }
+  #experience-badge{
+    margin: 0px auto;
+  }
+}
+
+/* Medium size devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .team,
+  .features-love{
+    flex-direction: column ;
+  }
+  .our-features{
+    margin-left: 20px auto;
+  }
+  .features-image>img{
+    width: 100%;
+  }
 }
