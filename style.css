@@ -222,7 +222,9 @@ main>section{
   .nav-bar,
   .nav-list,
   .team,
-  .features-love{
+  .features-love,
+  .rewards,
+  .sponser-images{
     flex-direction: column ;
   }
   .team-images-container{
@@ -237,6 +239,16 @@ main>section{
   #experience-badge{
     margin: 0px auto;
   }
+  .rewards{
+    gap: 20px;
+  }
+  .copyright{
+    padding: 5px 10px;
+  }
+  .copyright>p{
+    font-size: 0.75rem;
+  }
+ 
 }
 
 /* Medium size devices */
@@ -250,5 +262,30 @@ main>section{
   }
   .features-image>img{
     width: 100%;
+  }
+  #experience-badge{
+    padding: 5px 10px;
+    background-color: #FF900E;
+    border-radius: 5px;
+    border: none;
+    margin-left: calc(100% / 2);
+    margin-top: -75px;
+  }
+  .copyright{
+    padding: 5px 10px;
+  }
+  .copyright>p{
+    font-size: 1.05rem;
+  }
+  .rewards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 100px;
+  }
+  .sponser-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
   }
 }
